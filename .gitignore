@@ -1,0 +1,20 @@
+Autoencoders/content/
+Autoencoders/data/
+Autoencoders/MNIST/
+Object\ Detection/code/ssd-utils/ 
+Object\ Detection/code/data/
+Object\ Detection/code/VOC_data/
+Object\ Detection/code/saved_models/
+
+Segmentation/code/mask-RCNN/images/
+Segmentation/code/mask-RCNN/annotations_instance/
+Segmentation/code/mask-RCNN-custom/data/
+Segmentation/code/U-NET/data/
+*.jpg
+*.png
+*.xml
+*.zip
+*.csv
+*.tar
+*.txt
+
