@@ -17,4 +17,4 @@ Segmentation/code/U-NET/data/
 *.csv
 *.tar
 *.txt
-
+*Darknet
