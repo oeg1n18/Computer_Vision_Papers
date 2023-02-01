@@ -23,7 +23,6 @@ def train_one_epoch(model, optimizer, data_loader, device, epoch, print_freq, sc
         lr_scheduler = torch.optim.lr_scheduler.LinearLR(
             optimizer, start_factor=warmup_factor, total_iters=warmup_iters
         )
-
     for images, targets in metric_logger.log_every(data_loader, print_freq, header):
         images = list(image.to(device) for image in images)
         targets = [{k: v.to(device) for k, v in t.items()} for t in targets]
@@ -39,7 +38,6 @@ def train_one_epoch(model, optimizer, data_loader, device, epoch, print_freq, sc
 
         if not math.isfinite(loss_value):
             print(f"Loss is {loss_value}, stopping training")
-            print(loss_dict_reduced)
             sys.exit(1)
 
         optimizer.zero_grad()
